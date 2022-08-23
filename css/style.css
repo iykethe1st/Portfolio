@@ -19,6 +19,7 @@ html{ font-size: 62.5%;}
 body{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2rem;
+    color: rgb(58, 57, 57);
 }
 
 /* container */
@@ -55,8 +56,13 @@ body{
     margin: 1rem 0;
 }
 
-/* grid */
-
+/* media */
+.media__header{
+    color: var(--color-accent);
+}
+.media__content{
+    font-weight: 300;
+}
 
 
 
