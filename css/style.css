@@ -94,3 +94,18 @@ body{
     text-align: center;
     margin-top: .8rem;
 }
+
+
+/* icons */
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.icon--primary{
+    fill: var(--color-secondary);
+    background: var(--color-primary);
+}
+.icon--secondary{
+    fill: var(--color-secondary);
+}
