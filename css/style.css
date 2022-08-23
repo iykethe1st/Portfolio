@@ -127,3 +127,32 @@ body{
         gap: 2rem;
     }
 }
+
+/* Collapsibles */
+
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.collapsible__content{
+    width: 90%;
+    max-height: 0;
+    margin: auto;
+    opacity: 0;
+    transition: all .5s;
+}
+.collapsible__icon{
+    transform: rotate(-90deg);
+    transition: transform .5s;
+}
+
+.collapsible--expanded .collapsible__icon{
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content{
+    opacity: 1;
+    max-height: 100vh; 
+}
