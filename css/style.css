@@ -18,7 +18,7 @@ html{ font-size: 62.5%;}
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* container */
@@ -44,6 +44,18 @@ body{
     background: var(--color-secondary);
 }
 
+/* Lists */
+
+.lists{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-secondary);
+}
+.list__item{
+    margin: 1rem 0;
+}
+
+/* grid */
 
 
 
