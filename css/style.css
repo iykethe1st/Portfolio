@@ -109,3 +109,21 @@ body{
 .icon--secondary{
     fill: var(--color-secondary);
 }
+
+/* grid */
+
+.grid{
+    border: 1px solid black;
+    padding: 2rem;
+}
+.grid--1x2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
