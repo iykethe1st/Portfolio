@@ -393,7 +393,21 @@ body{
 
 
 
+/* recommendations block */
 
+.recommendations-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20rem;
+    padding: 2rem;
+    box-shadow: 0 0 3px 5px gray;
+    border-radius: 5px;
+}
+.recommendations-block img{
+    height: 5rem;
+    width: 5rem;
+}
 
 
 
