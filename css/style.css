@@ -409,7 +409,24 @@ body{
     width: 5rem;
 }
 
+/* Image containers */
+.image-container{
+    height: 20rem;
+    width: 20rem;
 
+}
+
+.image-container img{
+    width: 100%;
+}
+.skewed--left{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+
+}
+.skewed--right{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+}
 
 
 
