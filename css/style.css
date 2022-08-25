@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Rubik+Iso&display=swap');rt url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Rubik+Marker+Hatch&display=swap');
 
 html{ font-size: 62.5%;}
 
@@ -13,7 +12,7 @@ html{ font-size: 62.5%;}
     --color-primary: #000C24;
     --color-secondary: #928A97;
     --color-accent: #F44336;
-    --color-background: whitesmoke;
+    --color-background: rgb(200, 197, 197);
 }
 
 body{
@@ -24,9 +23,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-img{
-    width: 100%;
-}
+
 
 /* container */
 
@@ -237,5 +234,50 @@ img{
     }
     .nav__list .list__item{
         border: none;
+    }
+}
+
+
+ /* Hero */
+.hero{
+    padding: 4rem;
+    background: #000C24;
+    color: var(--color-background);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+    
+.hero__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .hero__heading{
+    font-family: 'Rubik Iso', cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.hero__profession{
+    margin: .5rem 0;
+}
+.hero__image{
+    max-width: 20rem;
+    margin: 0 auto;
+}
+.hero__image img{
+    border-radius: 50%;
+    border: 5px solid var(--color-background);
+    width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero{
+        padding: 6rem;
     }
 }
