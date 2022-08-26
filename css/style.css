@@ -22,12 +22,21 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+a{
+    text-decoration: none;
+    color: var(--color-background);
+    cursor: pointer;
+}
+a:hover{
+    color: var(--color-accent);
+}
+
 
 
 /* container */
 
 .container{
-    padding: 1rem
+    padding: 5rem
 }
 @media screen and (min-width: 768px) {
     .container{
@@ -179,12 +188,17 @@ body{
     display: flex;
     flex-direction: column;
     background: transparent;
-    border: 2px solid var(--color-secondary);
+    background: var(--color-primary);
+    border-bottom: 2px solid var(--color-background);
 }
 .nav__brand{
-    width: 20rem;
-    height: 9rem;
+    width: 10rem;
+    height: 4rem;
     display: inline-block;
+}
+.nav__image{
+    width: 100%;
+    margin-top: .5rem;
 }
 .nav__header{
     display: flex;
@@ -192,20 +206,21 @@ body{
     padding: 0 1rem;
 }
 .nav__icon{
-    width: 5rem;
-    height: 5rem;
-    fill: var(--color-primary);
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-background);
     opacity: 0.8;
     cursor: pointer;
     transition: box-shadow 0.15s;
-    margin: auto 0;
+    margin-top: 1rem;
 }
 
 .nav__list{
     margin: 0;
     padding: 0 5rem;
     width: 100%;
-    color: var(--color-primary);
+    color: var(--color-background);
+    font-size: 1.1rem;
 }
 
 .nav__list .list__item{
@@ -229,7 +244,7 @@ body{
 
 @media screen and (min-width: 768px) {
     .nav{
-        padding: 0 2rem;
+        padding: .5rem 2rem 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -245,6 +260,7 @@ body{
         display: flex;
         gap: 2.5rem;
         max-height: 100%;
+        font-size: 1.2rem;
     }
     .nav__list .list__item{
         border: none;
@@ -255,7 +271,7 @@ body{
  /* Hero */
 .hero{
     background: var(--color-primary);
-    padding: 4rem;
+    padding: 6rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -271,15 +287,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.hero__content button{
+    color: var(--color-primary);
+    margin: 1rem 0;
 }
 
  .hero__heading{
     font-family: 'Rubik Iso', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
 }
 .hero__profession{
     margin: .5rem 0;
+    font-size: 1.5rem;
 }
 .hero__image{
     max-width: 20rem;
@@ -293,7 +315,8 @@ body{
 
 @media screen and (min-width: 768px) {
     .hero{
-        padding: 6rem;
+        padding: 6rem 7rem;
+        gap: 0;
     }
 }
 
@@ -301,13 +324,15 @@ body{
 /* skills */
 .skills{
     background: var();
+    margin: 0;
+    
 }
 .skills__heading{
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 1rem;
     margin-bottom: .2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 }
 .progress-bar{
@@ -390,6 +415,10 @@ body{
     max-width: 15rem;
     margin: 0 auto;
 }
+.skills__block h3{
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-background);
+} 
 
 .progress--content span{
     margin-top: 1rem;
@@ -438,12 +467,11 @@ body{
 .media{
     font-size: 1.4rem;
     gap: 2rem;
-    max-width: 80rem;
     overflow: hidden;
     margin-top: 1rem;
 }
 .media__content{
-    width: 100%;
+    max-width: 500px;
     border: 5px solid var(--color-primary);
     padding: 2rem;
     border-radius: 10px;
@@ -469,14 +497,30 @@ body{
     justify-items: center;
     align-items: center;
     border-radius: 10px;
+    gap: 1rem;
+    padding: 0 2rem;
+    margin: 0 auto;
 
+}
+@media screen and (min-width: 768px) {
+    .about__block{
+        gap: 2rem;
+        max-width: 70rem;
+        padding:0  3rem;
+        margin: 0 auto;
+    }
+    
 }
 
 /* Skills block */
 .skills__container {
     background: var(--color-primary);
-    padding: 5rem;
+    padding: 0  2rem;
     color: var(--color-background);
+    gap: 0;
+    width: 100%;
+    height: 65rem;
+
 }
 .skills__image img{
     border-radius: 0;
@@ -495,6 +539,14 @@ body{
     padding: 2rem;
     align-self: center;
     justify-items: center;
+}
+@media screen and (min-width: 768px) {
+    .skills__container{
+        padding: 0 8rem;
+        gap: 2rem;
+        height: 25rem;
+    }
+
 }
 
 
@@ -535,7 +587,7 @@ body{
     background: var(--color-primary);
     align-items: center;
     justify-items: center;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 
