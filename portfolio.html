@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ikenna Udemezue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <section class="nav collapsible">
+        <div class="nav__header">
+            <div class="nav__brand">
+                <a href="/"><img class="nav__image" src="images/logo.png" alt=""></a>
+            </div>
+            <div class="nav__toggler">
+                <svg class="icon icon--secondary nav__icon">
+                    <use xlink:href="images/svg-sprite.svg#bars-solid"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="nav__items">
+            <ul class="lists nav__list collapsible__content">
+                <li class="list__item"><a href="/">Home</a></li>
+                <li class="list__item"><a href="#">About</a></li>
+                <li class="list__item"><a href="#">Portfolio</a></li>
+                <li class="list__item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio__header">
+            <h2 class="portfolio__heading">Portfolio</h2>
+            <p class="portfolio__content">
+                Here are a list of professional projects I've collaborated on. 
+                To see my personal projects, go to <a class="portfolio__links" href="about.html">About</a>
+            </p>
+        </div>
+
+        <div class="portfolio__footer">
+            <div class="portfolio__footer-item grid--1x2">
+                <div class="">
+                    <h2>
+                        Beima Suite
+                    </h2>
+                    <span>
+                        Beima is a smart contract development suite that easily lets you document and test your smart contracts. I worked on the frontend part of this project using React.
+                    </span>
+                    <a href="https://www.beima.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/beima.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2">
+                <div class="">
+                    <h2>
+                        BlockchainHub Africa
+                    </h2>
+                    <span>
+                        BlockchainHub africa is a platform that advances Web3 adoption through talent acceleration and innovative blockchain-based solutions in Africa.
+                        I contributed to the frontend development of this project.
+                    </span>
+                    <a href="https://blockchainhub.africa/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/bhub.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2">
+                <div class="">
+                    <h2>
+                        NDU
+                    </h2>
+                    <span>
+                        NDU is a platform that validates the authenticity of Medical supplies(Drugs).
+                        I contributed to the frontend development and Smart contract implementation using Solidity.
+                    </span>
+                    <a href="https://local-ndu.vercel.app/dashboard/user" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/ndu.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2">
+                <div class="">
+                    <h2>
+                        Double Dice
+                    </h2>
+                    <span>
+                        Double Dice is a decentralized multiplayer gaming platform that rewards gamers for playing.
+                        I contributed to the frontend development and Smart contract implementation.
+                    </span>
+                    <a href="https://doubledice.com" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/double-dice.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h2 class="hero__heading">Ikenna Udemezue</h2>
+        <div class="icon-container footer__icon">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/svg-sprite.svg#linkedin-brands"></use>
+            </svg>
+            <svg class="icon icon--secondary">
+                <use xlink:href="images/svg-sprite.svg#github-brands"></use>
+            </svg>
+            <svg class="icon icon--secondary">
+                <use xlink:href="images/svg-sprite.svg#square-twitter-brands"></use>
+            </svg>
+        </div>
+        <span class="footer__text">
+            All rights reserved &#x00a9; 2022 Ikenna Udemezue
+        </span>
+    </section>
+</body>
+</html>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio | Iykethe1st - The Tech Billman</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
 
 </head>
@@ -32,7 +33,7 @@
         </div>
     </section>
 
-    <section class="hero grid--1x2">
+    <section class="hero grid--1x2" data-aos="zoom-in">
         <div class="hero__content">
             <h2 class="hero__heading">
                 IKENNA UDEMEZUE
@@ -62,11 +63,14 @@
 
 
         <section class="media grid--1x2 about__block">
-            <div class="image-container">
-                <img class="media__image" src="images/me.png" alt="">
+            <div class="image-container" data-aos="slide-right">
+                <picture srcset="images/me.png 1x, images/me@2x.png 2x"
+                srcset="images/me.webp 1x, images/me@2x.webp 2x">
+                    <img class="media__image" src="images/me@2x.webp" alt="">
+                </picture>
             </div>
         
-            <div class="media__content">
+            <div class="media__content" data-aos="slide-left">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis recusandae consequatur, libero corrupti nostrum repellat. Rem, exercitationem placeat voluptatibus obcaecati iste deleniti itaque reprehenderit voluptates pariatur dignissimos illum nesciunt.</p>
                 <a href="
@@ -76,10 +80,8 @@
             </div>
         </section>
 
-    <section class="media grid--1x3 skewed--right skills__container">
-        <div class="skills">
-    
-    
+    <section class="media grid--1x3 skewed--right skills__container" >
+        <div class="skills"data-aos="fade-down">
             <div class="skills__block">
                 <h3>Languages</h3>
                 <div class="progress--content">
@@ -145,7 +147,7 @@
         
         </div>
     
-        <div class="skills">
+        <div class="skills" data-aos="fade-up">
     
     
             <div class="skills__block">
@@ -192,7 +194,7 @@
             </div>
         </div>
     
-        <div class="skills__block">
+        <div class="skills__block" data-aos="fade-down">
             <h3>Extra Skills</h3>
             <div class="extra__skills">
                 <svg class="icon icon--primary">
@@ -213,7 +215,7 @@
     
     <!-- Recommendations -->
     <section class="testimonials grid--1x3">
-        <div class="recommendations-block">
+        <div class="recommendations-block" data-aos="zoom-in">
             <img src="images/five-star-yellow-icon.svg" alt="">
             <h2>Great  Quality</h2>
             <p>
@@ -224,7 +226,7 @@
             </p>
         </div>
     
-        <div class="recommendations-block">
+        <div class="recommendations-block" data-aos="zoom-in">
             <img src="images/five-star-yellow-icon.svg" alt="">
             <h2>Great  Quality</h2>
             <p>
@@ -235,7 +237,7 @@
             </p>
         </div>
     
-        <div class="recommendations-block">
+        <div class="recommendations-block" data-aos="zoom-in">
             <img src="images/five-star-yellow-icon.svg" alt="">
             <h2>Great  Quality</h2>
             <p>
@@ -249,7 +251,7 @@
 
     <section class="contact__block">
 
-        <div class="form--group grid--1x2">
+        <div class="form--group grid--1x2" data-aos="slide-up">
             <div class="contact__shoutout">
                 <h1>
                     Drop me a line. I would like to hear from you
@@ -275,9 +277,10 @@
                     </button>
                 </div>
             </form>
+        </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" data-aos="fade">
         <h2 class="hero__heading">Ikenna Udemezue</h2>
         <div class="icon-container footer__icon">
             <svg class="icon icon--primary">
@@ -296,5 +299,9 @@
     </section>
     
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
