@@ -527,3 +527,16 @@ body{
     color: var(--color-primary);
     font-size: large;
 }
+
+/* footer block */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1.5rem;
+}
+
+
+
