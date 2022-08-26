@@ -403,7 +403,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 20rem;
+    max-width: 25rem;
     padding: 2rem;
     box-shadow: 0 0 3px 5px gray;
     border-radius: 5px;
@@ -490,4 +490,9 @@ body{
     gap: .5rem;
     font-size: 1.2rem;
     padding-top: 1rem;
+}
+.testimonials{
+    padding: 2rem;
+    align-self: center;
+    justify-items: center;
 }
