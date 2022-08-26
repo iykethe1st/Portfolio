@@ -499,7 +499,7 @@ a:hover{
     align-items: center;
     border-radius: 10px;
     gap: 1rem;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     margin: 0 auto;
 
 }
@@ -507,7 +507,7 @@ a:hover{
     .about__block{
         gap: 2rem;
         max-width: 70rem;
-        padding:0  3rem;
+        padding: 0  3rem;
         margin: 0 auto;
     }
     
@@ -657,7 +657,7 @@ a:hover{
 }
 .portfolio__links::after{
     content: '-->';
-    margin-left: .35rem;
+    margin-left: 0;
     transition: transform .5s;
 }
 .portfolio__links:hover::after{

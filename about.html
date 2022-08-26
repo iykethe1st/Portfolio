@@ -5,8 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me | Iykethe1st Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
+    <section class="nav collapsible">
+        <div class="nav__header">
+            <div class="nav__brand">
+                <a href="/"><img class="nav__image" src="images/logo.png" alt=""></a>
+            </div>
+            <div class="nav__toggler">
+                <svg class="icon icon--secondary nav__icon">
+                    <use xlink:href="images/svg-sprite.svg#bars-solid"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="nav__items">
+            <ul class="lists nav__list collapsible__content">
+                <li class="list__item"><a href="/">Home</a></li>
+                <li class="list__item"><a href="#">About</a></li>
+                <li class="list__item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="list__item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="media grid--1x2 about__block">
+        <div class="image-container" data-aos="zoom-in">
+            <picture srcset="images/me.png 1x, images/me@2x.png 2x"
+            srcset="images/me.webp 1x, images/me@2x.webp 2x">
+                <img class="media__image" src="images/me@2x.webp" alt="">
+            </picture>
+        </div>
+    
+        <div class="media__content" data-aos="slide-left">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis recusandae consequatur, libero corrupti nostrum repellat. Rem, exercitationem placeat voluptatibus obcaecati iste deleniti itaque reprehenderit voluptates pariatur dignissimos illum nesciunt.</p>
+            <a href="
+            #"><button class="btn btn--primary">
+                Download CV
+            </button></a>
+        </div>
+    </section>
+
+
+
+    <section class="portfolio">
+        <div class="portfolio__header" data-aos="fade">
+            <h2 class="portfolio__heading">Personal Projects</h2>
+            <p class="portfolio__content">
+                Here are a list of professional projects I've collaborated on. 
+                To see my personal projects, go to <a class="portfolio__links" href="portfolio.html">Portfolio</a>
+            </p>
+        </div>
+
+        <div class="portfolio__footer">
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-right">
+                <div class="">
+                    <h2>
+                        The TechBillman Blog
+                    </h2>
+                    <span>
+                        The TechBillman is my blog site, where I share my journey, thoughts and personal experiences in the Tech Industry.
+                        Built with the MERN stack 
+                    </span>
+                    <a href="https://www.beima.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/beima.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-left">
+                <div class="">
+                    <h2>
+                        BtsDAO
+                    </h2>
+                    <span>
+                        This is just a Decentralized Autonomous Organization, I built it when I was learning Blockchain technologies and Solidity.
+                        Built with the MERN stack, Solidity and some blockchsin technologies like Hardhat.
+                        Connect using the RINKEBY test network.
+                    </span>
+                    <a href="https://bts-dao.vercel.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/bhub.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-right">
+                <div class="">
+                    <h2>
+                        BtsNft
+                    </h2>
+                    <span>
+                        My Personal NFT project. Connect your wallet using the RINKEBY test network and mint.
+                        Built with the MERN stack, Solidity and some blockchain technologies like Hardhat.
+                    </span>
+                    <a href="https://bts-collection.vercel.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/ndu.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-left">
+                <div class="">
+                    <h2>
+                        Art Afrique
+                    </h2>
+                    <span>
+                        An e-Commerce platform for Artists. Built using the MEAN stack.
+                    </span>
+                    <a href="#" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/double-dice.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-right">
+                <div class="">
+                    <h2>
+                        BtsICO
+                    </h2>
+                    <span>
+                        An extension of my Personal NFT project. Here I implemented Initial Coin Offering .
+                        Built with the MERN stack, Solidity and some blockchain technologies like Hardhat.
+                        Connect using the RINKEBY test network.
+                    </span>
+                    <a href="https://bts-smart-token-ico.vercel.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/ndu.png" alt="">
+            </div>
+
+            <div class="portfolio__footer-item grid--1x2" data-aos="flip-right">
+                <div class="">
+                    <h2>
+                        BtsNFT Whitelist
+                    </h2>
+                    <span>
+                        An extension of my personal NFT project. Here I implemented Whitelisting using Merkle Tress.
+                        Built with the MERN stack, Solidity and some blockchain technologies like Hardhat.
+                        Connect using the RINKEBY test network.
+                    </span>
+                    <a href="https://bts-collection.vercel.app/" target="_blank">
+                        <h3 class="portfolio__links">
+                            View Project
+                        </h3>
+                    </a>
+                </div>
+                <img src="images/ndu.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h2 class="hero__heading">Ikenna Udemezue</h2>
+        <div class="icon-container footer__icon">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/svg-sprite.svg#linkedin-brands"></use>
+            </svg>
+            <svg class="icon icon--secondary">
+                <use xlink:href="images/svg-sprite.svg#github-brands"></use>
+            </svg>
+            <svg class="icon icon--secondary">
+                <use xlink:href="images/svg-sprite.svg#square-twitter-brands"></use>
+            </svg>
+        </div>
+        <span class="footer__text">
+            All rights reserved &#x00a9; 2022 Ikenna Udemezue
+        </span>
+    </section>
+    
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
 </body>
 </html>
