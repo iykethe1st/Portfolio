@@ -496,3 +496,34 @@ body{
     align-self: center;
     justify-items: center;
 }
+
+
+/* contact block */
+.contact__block{
+    padding: 2rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.form--group{
+    padding: 2rem;
+    background: var(--color-background);
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px gray;
+    min-width: 240px;
+    gap: 0;
+}
+.form--group h2{
+    color: var(--color-accent);
+}
+.form--input{
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    padding: 5px;
+    margin: .5rem 0;
+    width: 100%;
+}
+.contact__shoutout{
+    margin: auto 0;
+    color: var(--color-primary);
+    font-size: large;
+}
