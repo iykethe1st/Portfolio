@@ -580,7 +580,15 @@ a:hover{
 .contact__block{
     padding: 4rem 2rem;
     max-width: 70rem;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
+}
+@media screen and (min-width: 768px) {
+    .contact{
+        height: 70vh;
+    }
+    .contact__block{
+        margin: 0 auto;
+    }
 }
 .form--group{
     padding: 2rem;
