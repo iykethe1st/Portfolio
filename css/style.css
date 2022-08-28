@@ -607,6 +607,7 @@ a:hover{
 
 /* footer block */
 .footer{
+    bottom: 0;
     display: flex;
     flex-direction: column;
     background: var(--color-primary);
