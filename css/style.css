@@ -186,6 +186,7 @@ a:hover{
 /* Navigation bar */
 .nav{
     display: flex;
+    height: 4.5rem;
     flex-direction: column;
     background: transparent;
     background: var(--color-primary);
@@ -193,9 +194,10 @@ a:hover{
 }
 
 .nav__brand{
-    width: 10rem;
+    width: 6rem;
     height: 4rem;
     display: inline-block;
+    margin-top: .5rem;
 }
 .nav__image{
     width: 100%;
@@ -207,8 +209,8 @@ a:hover{
     padding: 0 1rem;
 }
 .nav__icon{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     fill: var(--color-background);
     opacity: 0.8;
     cursor: pointer;
@@ -240,7 +242,11 @@ a:hover{
 .nav__toggler{
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex; 
+}
+
+.nav__toggler svg{
+    margin: auto 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -265,6 +271,12 @@ a:hover{
     }
     .nav__list .list__item{
         border: none;
+    }
+    .nav__brand{
+        width: 8rem;
+        height: 5rem;
+        display: inline-block;
+        margin-top: .5rem;
     }
 }
 
@@ -561,7 +573,6 @@ a:hover{
 }
 .form--group{
     padding: 2rem;
-    background: var(--color-background);
     border-radius: 10px;
     box-shadow: 0 0 3px 3px gray;
     min-width: 240px;
@@ -669,4 +680,20 @@ a:hover{
     .portfolio__footer-item{
         gap: 2rem;
     }
+}
+
+/* sent mail */
+.sent-mail{
+    height: 65vh;
+    display: flex;
+}
+
+.sent__info{
+    box-shadow: 0 0 3px 3px gray;
+    width: 90%;
+    text-align: center;
+    margin: auto auto;
+    padding: 3rem;
+    border-radius: 10px;
+
 }
