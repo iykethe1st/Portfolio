@@ -232,19 +232,12 @@ a:hover{
     border-bottom: 2px solid var(--color-secondary);
     
 }
-.nav__items{
-    height: 0;
-    transition: height .3s;
-}
 
 .nav.collapsible--expanded .nav__icon{
     box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
     opacity: 2;
 
-}
-.nav.collapsible--expanded .nav__items{
-    height: 100%;
 }
 
 .nav__toggler{
@@ -259,14 +252,11 @@ a:hover{
 
 @media screen and (min-width: 768px) {
     .nav{
-        padding: .2rem 1rem 0;
+        padding: .5rem 2rem 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-    .nav__items{
-        height: 100%;
     }
 
     .nav__icon{
