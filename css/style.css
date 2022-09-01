@@ -397,6 +397,15 @@ a:hover{
     animation: node 1s linear forwards;
 
 }
+.django-skill{
+    animation: django 1s linear forwards;
+
+}
+.c-skill{
+    animation: c 1s linear forwards;
+
+}
+
 
 @keyframes javascript{
     100%{
@@ -406,13 +415,13 @@ a:hover{
 
 @keyframes react{
     100%{
-        width: 84%;
+        width: 86%;
     }
 }
 
 @keyframes angular{
     100%{
-        width: 80%;
+        width: 84%;
     }
 }
 
@@ -424,9 +433,21 @@ a:hover{
 
 @keyframes node{
     100%{
-        width: 82%;
+        width: 80%;
     }
 }
+@keyframes django{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes c{
+    100%{
+        width: 83%;
+    }
+}
+/* ------ */
+
 
 .progress--content{
     display: flex;
