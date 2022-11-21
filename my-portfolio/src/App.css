@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+
+.skew-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__heading {
+  font-family: "Rubik Iso", cursive;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.javascript-skill {
+  animation: javascript 1s linear forwards;
+}
+.html-skill {
+  animation: html 1s linear forwards;
+}
+.react-skill {
+  animation: react 1s linear forwards;
+}
+.angular-skill {
+  animation: angular 1s linear forwards;
+}
+.python-skill {
+  animation: python 1s linear forwards;
+}
+.node-skill {
+  animation: node 1s linear forwards;
+}
+.django-skill {
+  animation: django 1s linear forwards;
+}
+.c-skill {
+  animation: c 1s linear forwards;
+}
+.solidity-skill {
+  animation: solidity 1s linear forwards;
+}
+
+@keyframes javascript {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  100% {
+    width: 92%;
+  }
+}
+
+@keyframes react {
+  100% {
+    width: 86%;
+  }
+}
+@keyframes solidity {
+  100% {
+    width: 88%;
+  }
+}
+
+@keyframes angular {
+  100% {
+    width: 84%;
+  }
+}
+
+@keyframes python {
+  100% {
+    width: 89%;
+  }
+}
+
+@keyframes node {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes django {
+  100% {
+    width: 80%;
+  }
+}
+@keyframes c {
+  100% {
+    width: 86%;
+  }
+}

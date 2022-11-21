@@ -1,39 +1,34 @@
+import { AiFillTwitterCircle, AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import Fullstack from "../images/fullstack.png";
+import ButtonPrimary from "./common/ButtonPrimary";
 const Hero = () => {
   return (
-    <section class="hero grid--1x2" data-aos="zoom-in">
-      <div class="hero__content">
-        <h2 class="hero__heading">IKENNA UDEMEZUE</h2>
-        <p class="hero__profession">Software Engineer + Full Stack Developer</p>
-        <div class="hero__icons">
-          <a href="https://github.com/iykethe1st" target="_blank">
-            <svg class="icon icon--secondary">
-              {/* <use xlink:href="images/svg-sprite.svg#github-brands"></use> */}
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ikenna-udemezue-90b1b121a/"
-            target="_blank"
-          >
-            {" "}
-            <svg class="icon icon--secondary">
-              <use xlink:href="images/svg-sprite.svg#linkedin-brands"></use>
-            </svg>
-          </a>
+    <section
+      className="grid grid-cols-1 lg:flex skew-right justify-around bg-[#000c24] gap-[3rem] lg:gap-0 px-4 pt-8 pb-[5rem]"
+      data-aos="zoom-in"
+    >
+      <div className="flex flex-col items-center my-auto">
+        <div className="flex flex-col items-center">
+          <h4 className="text-[2rem] hero__heading font-semibold px-8">
+            IKENNA UDEMEZUE
+          </h4>
 
-          <a href="https://twitter.com/X_iyke" target="_blank">
-            {" "}
-            <svg class="icon icon--secondary">
-              <use xlink:href="images/svg-sprite.svg#square-twitter-brands"></use>
-            </svg>
-          </a>
+          <h1 className="text-[1.2rem] md:text-[1.4rem] font-medium">
+            Software Enginner + Full Stack Developer
+          </h1>
         </div>
-        <a href="contact.html" target="">
-          {" "}
-          <button class="btn btn--secondary">Hire Me</button>
-        </a>
+        <div className="flex gap-2">
+          <AiFillTwitterCircle className="w-[2rem] h-[2rem]" />
+          <FaLinkedin className="w-[2rem] h-[2rem]" />
+          <AiOutlineGithub className="w-[2rem] h-[2rem]" />
+        </div>
+        <div className="py-4">
+          <ButtonPrimary label="Hire Me" />
+        </div>
       </div>
-      <div class="hero__image">
-        <img src="images/fullstack.png" alt="" />
+      <div className="mx-auto lg:mx-0 border-4 rounded-full">
+        <img src={Fullstack} alt="" className="h-[15rem] lg:h-[25rem]" />
       </div>
     </section>
   );
