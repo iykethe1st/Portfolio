@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Media from "./components/Media";
 import Skills from "./components/Skills";
+import Recommendations from "./components/Recommendations";
+import Contact from "./components/Contact";
 // ..
 AOS.init();
 
@@ -18,6 +20,8 @@ function App() {
       <Hero />
       <Media />
       <Skills />
+      <Recommendations />
+      <Contact />
     </div>
   );
 }

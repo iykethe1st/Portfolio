@@ -12,19 +12,11 @@ body {
   color: rgb(200, 197, 197);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.skew-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
-.hero__heading {
-  font-family: "Rubik Iso", cursive;
-  font-size: 2.5rem;
-  margin: 1rem 0;
 }
