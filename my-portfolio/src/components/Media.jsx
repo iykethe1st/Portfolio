@@ -15,7 +15,7 @@ const Media = () => {
       <div className="md:w-[30rem] md:h-[23rem] flex flex-col ring-[#000c24] ring-4 p-8 mx-4 lg:mx-0 rounded shadow-lg shadow-slate-800">
         <h1 className="font-semibold text-[#f44336]">About Me</h1>
         <span className="text-lg md:text-xl font-medium">
-          I'm a Software Engineer with 2 years+ working experience. I'm
+          I'm a Software Engineer with 4 years+ working experience. I'm
           proficient in Javascript, HTMl/CSS, Python, C and Solidity and I've
           worked with Frameworks like React, Vue, Django, Node JS, Want to know
           more? ...

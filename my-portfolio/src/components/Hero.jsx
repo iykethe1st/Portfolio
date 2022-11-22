@@ -19,9 +19,15 @@ const Hero = () => {
           </h1>
         </div>
         <div className="flex gap-2">
-          <AiFillTwitterCircle className="w-[2rem] h-[2rem]" />
-          <FaLinkedin className="w-[2rem] h-[2rem]" />
-          <AiOutlineGithub className="w-[2rem] h-[2rem]" />
+          <a href="https://github.com/iykethe1st" target="blank">
+            <AiOutlineGithub className="w-[2rem] h-[2rem] hover:text-[#f44336] active:text-[#af504acf]" />
+          </a>
+          <a href="https://www.linkedin.com/in/iyke-udemezue/" target="blank">
+            <FaLinkedin className="w-[2rem] h-[2rem] hover:text-[#f44336] active:text-[#af504acf]" />
+          </a>
+          <a href="https://twitter.com/X_iyke">
+            <AiFillTwitterCircle className="w-[2rem] h-[2rem] hover:text-[#f44336] active:text-[#af504acf]" />
+          </a>
         </div>
         <div className="py-4">
           <ButtonPrimary label="Hire Me" />

@@ -45,8 +45,8 @@ const Skills = () => {
     {
       id: 1,
       skill: "Node",
-      percent: "92%",
-      class: "bg-[#000c24] h-1 mx-1 rounded html-skill",
+      percent: "88%",
+      class: "bg-[#000c24] h-1 mx-1 rounded node-skill",
     },
     {
       id: 2,
@@ -91,7 +91,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="bg-[#000c24] shadow-lg shadow-slate-800 grid grid-cols-1 md:flex md:justify-around py-4 lg:px-[10rem]">
+    <div className="bg-[#000c24] shadow-lg shadow-slate-800 grid grid-cols-1 md:flex md:justify-around pb-[4rem] pt-4 lg:px-[10rem] skew-right lg:py-4">
       <div className="flex flex-col px-11">
         <h1 className="border-b-2">Languages</h1>
 

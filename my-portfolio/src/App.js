@@ -10,6 +10,7 @@ import Media from "./components/Media";
 import Skills from "./components/Skills";
 import Recommendations from "./components/Recommendations";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 // ..
 AOS.init();
 
@@ -22,6 +23,7 @@ function App() {
       <Skills />
       <Recommendations />
       <Contact />
+      <Footer />
     </div>
   );
 }
