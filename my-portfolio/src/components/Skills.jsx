@@ -92,7 +92,7 @@ const Skills = () => {
 
   return (
     <div className="bg-[#000c24] shadow-lg shadow-slate-800 grid grid-cols-1 md:flex md:justify-around pb-[4rem] pt-4 lg:px-[10rem] skew-right lg:py-4">
-      <div className="flex flex-col px-11">
+      <div className="flex flex-col px-11" data-aos="flip-down">
         <h1 className="border-b-2">Languages</h1>
 
         {skills.map((item) => (
@@ -108,7 +108,7 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-col px-11">
+      <div className="flex flex-col px-11" data-aos="flip-down">
         <h1 className="border-b-2">Frameworks</h1>
         {frameworks.map((item) => (
           <div key={item.id} className="pb-4">
@@ -122,10 +122,10 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col px-11">
+      <div className="flex flex-col px-11" data-aos="flip-down">
         <h1 className="border-b-2">Extra Skills</h1>
         {extraSkills.map((item) => (
-          <div className="flex flex-col gap-4">
+          <div key={item.id} className="flex flex-col gap-4">
             <div className="flex gap-4 items-center ">
               {item.icon}
               <h2 className="text-lg">{item.skill}</h2>

@@ -1,30 +1,28 @@
-import logo from "./logo.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-// import "./css/style.css";
 import "./css/normalize.css";
-import NavBar from "./components/Navbar";
-import Hero from "./components/Hero";
+import "animate.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-import Media from "./components/Media";
-import Skills from "./components/Skills";
-import Recommendations from "./components/Recommendations";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import "aos/dist/aos.css";
+import Home from "./Pages/Home";
+import Error404 from "./Pages/Error404";
+import About from "./Pages/About";
+import ContactPage from "./Pages/ContactPage";
+import Projects from "./Pages/Projects";
 // ..
 AOS.init();
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Hero />
-      <Media />
-      <Skills />
-      <Recommendations />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about-me" element={<About />}></Route>
+        <Route path="/contact-me" element={<ContactPage />}></Route>
+        <Route path="/some-projects" element={<Projects />}></Route>
+        <Route path="*" element={<Error404 />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

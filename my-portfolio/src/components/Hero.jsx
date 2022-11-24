@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="flex flex-col items-center my-auto">
         <div className="flex flex-col items-center">
-          <h4 className="text-[2rem] hero__heading font-semibold px-8">
+          <h4 className="text-4xl hero__heading font-semibold px-8">
             IKENNA UDEMEZUE
           </h4>
 

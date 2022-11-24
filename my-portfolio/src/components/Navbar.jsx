@@ -7,19 +7,20 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = [
     {
-      id: 0,
-      item: "About",
-      link: `/about-me`,
-    },
-    {
       id: 1,
       item: "Home",
       link: `/`,
     },
     {
+      id: 0,
+      item: "About",
+      link: `/about-me`,
+    },
+
+    {
       id: 2,
       item: "Projects",
-      link: `/completed-projects`,
+      link: `/some-projects`,
     },
     // {
     //   id: 3,
@@ -37,7 +38,9 @@ const NavBar = () => {
     <section className="bg-[#000c24] text-lg border-b-4 border-slate-400 grid grid-cols-1 md:flex md:justify-between md:px-[4rem] lg:px-[6rem] px-2">
       <div className="flex justify-between py-2 md:px-[2rem] flex-wrap">
         <div className="w-[6rem] md:w-[7rem]">
-          <img src={Logo} alt="logo" />
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
         </div>
         <div className="grid grid-cols-1 lg:flex items-center px-2">
           <FaBars
@@ -59,12 +62,11 @@ const NavBar = () => {
       >
         <ul className="md:flex gap-16 items-center  w-[18rem] md:w-full">
           {navItems.map((nav) => (
-            <li
-              key={nav.id}
-              className="py-2 border-b-2 md:border-0 border-slate-400 hover:text-[#f44336] active:text-[#af504acf] cursor-pointer"
-            >
-              {nav.item}
-            </li>
+            <Link key={nav.id} to={nav.link}>
+              <li className="py-2 border-b-2 md:border-0 border-slate-400 hover:text-[#f44336] active:text-[#af504acf] cursor-pointer">
+                {nav.item}
+              </li>
+            </Link>
           ))}
         </ul>
       </nav>

@@ -4,7 +4,7 @@ const Recommendations = () => {
       id: 0,
       name: "_Chukky Emeka",
       company: "BlockchainHub Africa",
-      words: `"We have the pleasure of working with Iyke on a very regular basis.
+      words: `"We have the pleasure of working with Iyke on a regular basis.
       Every single project is done in a timely fashion and is delivered
       exactly as outlined. Beyond that, his ability to learn new things very fast makes him an 
       invaluable part of our process. We absolutely
@@ -33,7 +33,11 @@ const Recommendations = () => {
   return (
     <section className="py-8 px-[5rem] grid grid-cols-1 lg:flex items-center justify-items-center lg:justify-around gap-8 lg:gap-2">
       {testimonials.map((item) => (
-        <div className="flex flex-col p-8 shadow-md shadow-black w-[20rem] h-[24rem] rounded-lg border-4 border-[#000c24]">
+        <div
+          key={item.id}
+          className="flex flex-col p-8 shadow-md shadow-black w-[20rem] h-[24rem] rounded-lg border-4 border-[#000c24]"
+          data-aos="flip-left"
+        >
           <img src="../images/five-star-yellow-icon.svg" className="h-8" />
           <h1 className="font-bold text-[1.5rem] text-[#f44336]">
             {item.title}
