@@ -22,8 +22,8 @@ const Recommendations = () => {
     },
     {
       id: 2,
-      name: "_Chukky Emeka",
-      company: "BlockchainHub Africa",
+      name: "Uriel Ukwueji",
+      company: "Stratifi NG",
       words: `"Ikenna has done a fantastic job overall. Not only did he take the job 
       on short notice, the code is very clean and slick. Love the way he achieves 
       his objectives."`,
