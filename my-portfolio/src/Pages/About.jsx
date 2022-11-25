@@ -34,8 +34,12 @@ const About = () => {
             I'm currently studying Software Engineering at African Leadership
             Unversity, set to graduate in the summer of 2023.
           </span>
-          <a href="" className="mt-4">
-            <ButtonSecondary label="Download Resume" />
+          <a
+            href="https://www.canva.com/design/DAErY48NGZE/33SbD7J0V6eFUjWqF1-3Bg/view?utm_content=DAErY48NGZE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            className="mt-4"
+            target="blank"
+          >
+            <ButtonSecondary label="View Resume" />
           </a>
         </div>
       </section>
