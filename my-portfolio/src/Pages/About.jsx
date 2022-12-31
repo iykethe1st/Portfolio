@@ -35,7 +35,7 @@ const About = () => {
             Unversity, set to graduate in the summer of 2023.
           </span>
           <a
-            href="https://www.canva.com/design/DAErY48NGZE/33SbD7J0V6eFUjWqF1-3Bg/view?utm_content=DAErY48NGZE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            href="https://www.canva.com/design/DAFWUE25Eus/kNdbUS3T43L5Z0z7Fyl8KA/edit?utm_content=DAFWUE25Eus&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             className="mt-4"
             target="blank"
           >
